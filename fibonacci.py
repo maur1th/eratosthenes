@@ -1,6 +1,6 @@
 def fibs(n):
     """
-    Yield numbers in the Fibonacci sequence up to its n-th number
+    Yield numbers in the Fibonacci sequence up to its n-th item
     """
     a, b, i = 0, 1, 0
     while i <= n:
@@ -10,6 +10,7 @@ def fibs(n):
 n = int(input("Give me an int: "))
 gen = fibs(n)
 
+# Deplete the generator while retaining its last-yielded value in result
 result = None
 for result in gen:
     pass
